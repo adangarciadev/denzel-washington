@@ -12,7 +12,7 @@ const Navbar = () => {
 				</nav>
 				<nav>
 					<NavLink to="/filmography" className={styles['nav-title']}>
-						Filmografía
+						Filmography
 					</NavLink>
 				</nav>
 			</header>
