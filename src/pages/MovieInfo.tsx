@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { useGetMovies } from '../context/MovieContext'
-import imdb from '/imdb.png'
+import imdb from '/imdb.svg'
 
 import styles from './MovieInfo.module.css'
 import Loader from '../components/Loader'
