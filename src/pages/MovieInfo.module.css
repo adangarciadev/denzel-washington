@@ -4,6 +4,7 @@
 	grid-template-areas:
 		'image image image image'
 		' . poster movie-header .';
+	height: 100dvh;
 }
 
 .image {
@@ -141,7 +142,6 @@
 	}
 	.image {
 		justify-self: center;
-		margin-top: 10px;
 	}
 	.poster-container {
 		justify-self: center;
@@ -152,5 +152,11 @@
 	}
 	.cast {
 		margin-top: 1rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.poster-container {
+		width: 150px;
 	}
 }
