@@ -1,0 +1,26 @@
+.release {
+	font-size: 20px;
+	color: #888;
+}
+
+.poster {
+	min-width: 100%;
+	border: 2px solid #ffffff;
+}
+
+.poster:hover {
+	box-shadow: 0 0 5px 5px #bef008c7;
+	border: 2px solid #ffffff;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: bold;
+	color: #54eb47;
+	margin: 0 auto;
+}
+
+.release {
+	font-size: 15px;
+	color: #888;
+}

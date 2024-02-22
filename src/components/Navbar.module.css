@@ -1,0 +1,72 @@
+.navbar {
+	display: flex;
+	justify-content: center;
+	position: sticky;
+	top: 0;
+	/* background: var(--secondary); */
+	padding: 10px;
+	background-color: rgba(92, 80, 80, 0.5);
+	border-bottom: 1px solid #ffffff;
+	text-transform: uppercase;
+	-webkit-backdrop-filter: blur(8px);
+	backdrop-filter: blur(8px);
+}
+
+.navbar nav {
+	margin: 0 2rem;
+}
+
+.navbar a {
+	display: block;
+	text-decoration: none;
+	position: relative;
+	padding: 0.2em 0;
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: #fff;
+}
+
+.nav-title::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.1em;
+	background-color: rgb(255, 255, 255);
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+nav:nth-child(1) a::after {
+	opacity: 1;
+	transform: scale(0);
+	transform-origin: center;
+}
+
+nav:nth-child(1) a:hover::after,
+nav:nth-child(1) a:focus::after {
+	transform: scale(1);
+}
+
+nav:nth-child(2) a::after {
+	opacity: 1;
+	transform: scale(0);
+	transform-origin: center;
+}
+
+nav:nth-child(2) a:hover::after,
+nav:nth-child(2) a:focus::after {
+	transform: scale(1);
+}
+
+nav:nth-child(3) a::after {
+	opacity: 1;
+	transform: scale(0);
+	transform-origin: center;
+}
+
+nav:nth-child(3) a:hover::after,
+nav:nth-child(3) a:focus::after {
+	transform: scale(1);
+}

@@ -1,0 +1,96 @@
+.denzel {
+	background-image: url('/denzel.png');
+	background-size: cover;
+	background-position: center center;
+	max-width: 100%;
+	height: auto;
+	background-attachment: fixed;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 3rem;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	color: rgb(255, 251, 0);
+	line-height: 0.8;
+}
+
+.info {
+	text-align: right;
+	font-weight: 300;
+	margin-top: 10px;
+	font-style: italic;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 2rem;
+	color: rgb(255, 255, 255);
+}
+
+.bio {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 1rem;
+	font-weight: 300;
+	color: rgb(255, 255, 255);
+}
+
+/* Estilo para pantallas pequeñas (menores a 576px) */
+@media only screen and (max-width: 576px) {
+	.denzel {
+		height: 100vh;
+		width: 100%;
+	}
+
+	.title {
+		font-size: 2rem;
+	}
+}
+
+/* Estilo para pantallas medianas (entre 576px y 768px) */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+	.denzel {
+		height: 100vh;
+		width: 100%;
+	}
+
+	.title {
+		font-size: 3rem;
+	}
+}
+
+/* Estilo para pantallas medianas (entre 768px y 992px) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.denzel {
+		height: 100vh;
+		width: 100%;
+	}
+
+	.title {
+		font-size: 3.5rem;
+	}
+}
+
+/* Estilo para pantallas grandes (entre 992px y 1200px) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.denzel {
+		height: 100vh;
+		width: 100%;
+	}
+
+	.title {
+		font-size: 5rem;
+	}
+}
+
+/* Estilo para pantallas extra grandes (mayores a 1200px) */
+@media only screen and (min-width: 1200px) {
+	.denzel {
+		height: 100vh;
+		width: 100%;
+	}
+
+	.title {
+		font-size: 5rem;
+	}
+}

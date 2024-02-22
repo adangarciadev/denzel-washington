@@ -1,0 +1,156 @@
+.container-movie {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas:
+		'image image image image'
+		' . poster movie-header .';
+}
+
+.image {
+	grid-area: image;
+	justify-self: center;
+
+	/* mask-image: linear-gradient(to bottom, transparent, #000), linear-gradient(to bottom, #000, transparent),
+		linear-gradient(to bottom, transparent, #000), linear-gradient(to bottom, #000, transparent),
+		linear-gradient(to bottom, transparent, #000);
+	mask-size: 19% 70%;
+	mask-position: 0 100%, 25% 25%, 50% 50%, 75% 0, 100% 50%;
+	mask-repeat: no-repeat; */
+	position: relative;
+	background: cover;
+	mask-image: linear-gradient(to bottom, white 5%, transparent 90%);
+	opacity: 0.3;
+}
+
+.overview {
+	/* grid-area: overview; */
+	margin: 10px;
+}
+
+.title {
+	font-size: 2em;
+	font-weight: bold;
+	color: #f0e3e3;
+	margin: 10px;
+}
+
+.release {
+	font-size: 1em;
+	color: #999;
+}
+
+.movie-header {
+	grid-area: movie-header;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+
+	grid-row: image / poster;
+	margin: 0;
+	z-index: 1;
+	margin-top: 37rem;
+}
+
+.genres {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px;
+}
+
+.genre {
+	font-size: 0.8em;
+	background-color: #ffffff; /* Color de fondo del género */
+	color: #555; /* Color del texto del género */
+	padding: 2px 6px; /* Espacio alrededor del texto del género */
+	margin-right: 5px; /* Espacio entre los géneros */
+	margin-bottom: 5px; /* Espacio entre los géneros y otros elementos */
+	border-radius: 3px; /* Bordes redondeados */
+}
+
+.poster-container {
+	grid-area: poster;
+	width: 250px;
+	justify-self: center;
+	grid-row: image / poster;
+	margin: 0;
+	z-index: 1;
+	margin-top: 37rem;
+
+	img {
+		border: 1px solid #f0e3e3;
+	}
+
+	p {
+		text-align: center;
+		color: rgb(109, 207, 236);
+		font-size: 0.9em;
+		margin-top: 5px;
+		font-style: italic;
+	}
+}
+
+.loader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.cast {
+	align-self: end;
+	justify-content: flex-start;
+	margin-top: 6rem;
+	/* grid-area: cast; */
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 10px;
+}
+
+.names {
+	font-size: 0.8em;
+	background-color: #615b5b; /* Color de fondo del género */
+	color: #f7f3f3; /* Color del texto del género */
+	padding: 2px 6px; /* Espacio alrededor del texto del género */
+	margin-right: 5px; /* Espacio entre los géneros */
+	margin-bottom: 5px; /* Espacio entre los géneros y otros elementos */
+	border-radius: 3px; /* Bordes redondeados */
+}
+
+.names:hover {
+	background-color: #f7f3f3;
+	color: #615b5b;
+}
+
+.imdb {
+	display: flex;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}
+
+@media (max-width: 1220px) {
+	.container-movie {
+		grid-template-areas:
+			'image'
+			'movie-header'
+			'poster';
+		grid-template-columns: 1fr;
+	}
+	.image {
+		justify-self: center;
+		margin-top: 10px;
+	}
+	.poster-container {
+		justify-self: center;
+		margin-top: 30rem;
+	}
+	.movie-header {
+		margin-top: 5rem;
+	}
+	.cast {
+		margin-top: 1rem;
+	}
+}
