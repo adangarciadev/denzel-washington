@@ -84,7 +84,7 @@ function MovieFilters() {
 
 	return (
 		<div>
-			<label>
+			<label className={styles.genre}>
 				<span>GENRE: </span>
 				<select onChange={handleGenre} value={selectedGenre?.id} className={styles.selector}>
 					{genresJson.map((item, index) => (
@@ -94,7 +94,7 @@ function MovieFilters() {
 					))}
 				</select>
 			</label>
-			<label>
+			<label className={styles.decade}>
 				<span>DECADE: </span>
 				<select onChange={handleDecade} value={selectedDecade?.id} className={styles.selector}>
 					{decadesJson.map((item, index) => (
